@@ -11,7 +11,33 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+	container: {
     flex: 1,
+    padding: 20,
+    backgroundColor: 'black',
   },
-});
+  section: {
+    marginBottom: 20,
+  },
+
+ header: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    color: '#ff7f00', 
+  },
+  headerbenefit:{
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    color:'white'
+  },
+  text: {
+    fontSize: 16,
+    marginBottom: 5,
+    color: '#fff',
+  },
+ workoutDescp:{
+ textAlign:'center'
+  },
+})
