@@ -61,10 +61,24 @@ const renderWorkout =({item}) =>(
       {/*Popular Workout Plans Section */}
       <View style={styles.section}>
         <Text style={styles.header}>Popular Workout Plans</Text>
-
+        <FlatList 
+                data={PopularworkoutPlans}
+                renderItem={renderWorkout}
+                keyExtractor={(item)=> item.id}
+                horizontal={true}
+                showsHorizontalScrollIndicator={false}
+        />
       </View>
-
-
+      <View style={styles.section}>
+            <Text style = {styles.header}>Intense Workout Plans</Text>
+            <FlatList
+                data={IntenseWorkoutPlans}
+                renderItem={renderWorkout}
+                keyExtractor={(item)=>item.id}
+                horizontal={true}
+                showsHorizontalScrollIndicator={false} 
+            />
+      </View>
       {/*Intense Workout Plans Section*/}
 
       
